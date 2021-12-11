@@ -58,7 +58,8 @@ if (!inAction) {
 		x += step_length;
 		isMoving = true;
 	}
-	else if (keyboard_check_direct(ord("0"))) {
+	
+	if (keyboard_check_direct(ord("0"))) {
 		currentTool = 0;
 	}
 	else if (keyboard_check_direct(ord("1"))) {
