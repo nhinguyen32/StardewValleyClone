@@ -1,3 +1,6 @@
+day = 1;
+
+
 var ground_width = obj_ground.sprite_width;
 var ground_height = obj_ground.sprite_height;
 for (var row = 0; row < room_width; row += ground_width) {
