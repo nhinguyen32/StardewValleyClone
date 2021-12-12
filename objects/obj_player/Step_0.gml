@@ -2,10 +2,10 @@ if (!inAction && !isMoving && currentTool != 0 && keyboard_check_pressed(ord("F"
 	image_index += sprites_per_action * currentTool;
 	currentIndex = image_index;
 	inAction = true;
+	interacted = true;
 }
 
 if (inAction && image_index < currentIndex || image_index >= currentIndex + sprites_per_action - 1) {
-	
 	inAction = false;
 }
 
@@ -50,7 +50,7 @@ if (!inAction) {
 		direction = 180;
 		x -= step_length;
 		isMoving = true;
-		obj_interactZone.x = x + sprite_width/4;
+		obj_interactZone.x = x + sprite_width*3/8;
 		obj_interactZone.y = y;
 	}
 	else if (keyboard_check_direct(ord("S")) || keyboard_check_direct(vk_down)) {
@@ -68,7 +68,7 @@ if (!inAction) {
 		direction = 0;
 		x += step_length;
 		isMoving = true;
-		obj_interactZone.x = x + sprite_width/4;
+		obj_interactZone.x = x + sprite_width*3/8;
 		obj_interactZone.y = y;
 	}
 	
