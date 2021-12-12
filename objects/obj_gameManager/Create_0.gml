@@ -1,5 +1,5 @@
 day = 1;
-
+gold = 100;
 
 var ground_width = obj_ground.sprite_width;
 var ground_height = obj_ground.sprite_height;
