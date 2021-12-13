@@ -1,7 +1,7 @@
 {
   "spriteId": {
-    "name": "spr_house",
-    "path": "sprites/spr_house/spr_house.yy",
+    "name": "spr_pausecontrol",
+    "path": "sprites/spr_pausecontrol/spr_pausecontrol.yy",
   },
   "solid": false,
   "visible": true,
@@ -20,18 +20,15 @@
   "physicsStartAwake": true,
   "physicsKinematic": false,
   "physicsShapePoints": [],
-  "eventList": [
-    {"isDnD":false,"eventNum":0,"eventType":0,"collisionObjectId":null,"resourceVersion":"1.0","name":"","tags":[],"resourceType":"GMEvent",},
-    {"isDnD":false,"eventNum":0,"eventType":3,"collisionObjectId":null,"resourceVersion":"1.0","name":"","tags":[],"resourceType":"GMEvent",},
-  ],
+  "eventList": [],
   "properties": [],
   "overriddenProperties": [],
   "parent": {
-    "name": "Objects",
-    "path": "folders/Objects.yy",
+    "name": "MainMenu",
+    "path": "folders/Objects/MainMenu.yy",
   },
   "resourceVersion": "1.0",
-  "name": "obj_house",
+  "name": "obj_resume",
   "tags": [],
   "resourceType": "GMObject",
 }
