@@ -1,3 +1,3 @@
-if (!obj_gameManager.gameIsPaused) {
+if (obj_player.doorInteracted && !obj_gameManager.gameIsPaused) {
 	NextDay();
 }

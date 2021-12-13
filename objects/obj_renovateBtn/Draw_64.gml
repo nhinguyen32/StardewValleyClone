@@ -1,3 +1,3 @@
 draw_set_halign(fa_middle);
 draw_set_valign(fa_middle);
-draw_text(x,y,"Renovate");
+draw_text(x,y,"Renovate: " + string(currentPrice) + "G");
