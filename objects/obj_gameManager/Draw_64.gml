@@ -1,1 +1,0 @@
-draw_sprite(spr_tools, obj_player.currentTool, 0, 0);

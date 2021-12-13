@@ -19,6 +19,7 @@
     {"id":{"name":"obj_crop","path":"objects/obj_crop/obj_crop.yy",},"order":4,},
     {"id":{"name":"spr_entrance","path":"sprites/spr_entrance/spr_entrance.yy",},"order":26,},
     {"id":{"name":"obj_entrance","path":"objects/obj_entrance/obj_entrance.yy",},"order":7,},
+    {"id":{"name":"obj_currentTool","path":"objects/obj_currentTool/obj_currentTool.yy",},"order":10,},
     {"id":{"name":"spr_hair","path":"sprites/spr_hair/spr_hair.yy",},"order":3,},
     {"id":{"name":"snd_countryAmbience","path":"sounds/snd_countryAmbience/snd_countryAmbience.yy",},"order":1,},
     {"id":{"name":"snd_itemPutDown","path":"sounds/snd_itemPutDown/snd_itemPutDown.yy",},"order":4,},
