@@ -1,5 +1,3 @@
-// Script assets have changed for v2.3.0 see
-// https://help.yoyogames.com/hc/en-us/articles/360005277377 for more information
 function NextDay(){
 	obj_gameManager.day++;
 	for (var i = 0; i < instance_number(obj_crop); ++i;)
@@ -16,6 +14,7 @@ function NextDay(){
 			i--;
 		}
 	}
+	
 	for (var i = 0; i < instance_number(obj_ground); ++i;)
 	{
 	    ground[i] = instance_find(obj_ground,i);
@@ -23,5 +22,8 @@ function NextDay(){
 			ground[i].index = 9;
 		}
 	}
+	
+	obj_shade.night_time = true;
+	
 	show_debug_message(obj_gameManager.day);
 }
