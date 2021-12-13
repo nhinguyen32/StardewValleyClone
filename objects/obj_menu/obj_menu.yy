@@ -1,7 +1,7 @@
 {
   "spriteId": {
-    "name": "spr_load",
-    "path": "sprites/spr_load/spr_load.yy",
+    "name": "spr_pausecontrol",
+    "path": "sprites/spr_pausecontrol/spr_pausecontrol.yy",
   },
   "solid": false,
   "visible": true,
@@ -28,7 +28,7 @@
     "path": "folders/Objects/MainMenu.yy",
   },
   "resourceVersion": "1.0",
-  "name": "obj_load",
+  "name": "obj_menu",
   "tags": [],
   "resourceType": "GMObject",
 }
