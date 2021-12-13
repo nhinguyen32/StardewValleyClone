@@ -3,7 +3,6 @@ gold = 100;
 
 // Pause handler
 gameIsPaused = false;
-paused_surf = -1;
 //saveCounter = 0;
 //currentSave = -1;
 
