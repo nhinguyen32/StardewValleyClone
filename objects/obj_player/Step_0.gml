@@ -93,6 +93,10 @@ if (!inAction) {
 	y = clamp(y, sprite_height, room_height);
 }
 
-if (isMoving) {
-	audio_play_sound(snd_footstep,1,0);
+	if (isMoving) {
+		if (!audio_is_playing(snd_footstep)) {
+			audio_sound_pitch(snd_footstep,4);
+			audio_play_sound(snd_footstep,1,0);
+		}
+	}
 }
