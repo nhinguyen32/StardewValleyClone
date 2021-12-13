@@ -2,6 +2,10 @@ if (obj_gameManager.gameIsPaused) {
 	image_index = sprite_direction * sprites_per_direction;
 }
 else {
+	if (keyboard_check_pressed(vk_anykey)) {
+		doorInteracted = false;
+	}
+	
 	if (!inAction && !isMoving && keyboard_check_pressed(ord("F"))) {
 		if (canInteract) {
 			interacted = true;
