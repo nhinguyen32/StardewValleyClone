@@ -2,13 +2,16 @@ if (obj_player.interacted) {
 var collided_object_id = instance_place(x, y, obj_ground);
 	if (collided_object_id != noone) {
 		if (obj_player.currentTool == 1) {
-			if (collided_object_id.index < 9) {
-				collided_object_id.index = 9;
-			}
-			else if (collided_object_id.hasCrop) {
-				var crop_id = instance_place(x, y, obj_crop);
-				instance_destroy(crop_id);
-				collided_object_id.hasCrop = false;
+			var house_id = instance_place(x, y, obj_house);
+			if (house_id = noone) {
+				if (collided_object_id.index < 9) {
+					collided_object_id.index = 9;
+				}
+				else if (collided_object_id.hasCrop) {
+					var crop_id = instance_place(x, y, obj_crop);
+					instance_destroy(crop_id);
+					collided_object_id.hasCrop = false;
+				}
 			}
 		}
 		else if (obj_player.currentTool == 2 && collided_object_id.index >= 9 && !collided_object_id.hasCrop) {
