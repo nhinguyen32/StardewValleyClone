@@ -8,3 +8,14 @@ for (var row = 0; row < room_width; row += ground_width) {
 		instance_create_layer(row, col, "Ground", obj_ground);
 	}
 }
+
+// Play music based on Room
+switch room {
+	case Gamestart: {
+		audio_play_sound(snd_townBGM,1,1);
+		}; break;
+	case Gameplay: {
+		audio_play_sound(snd_townBGM,1,1);
+		audio_play_sound(snd_countryAmbience,1,1);
+		}; break;
+	}

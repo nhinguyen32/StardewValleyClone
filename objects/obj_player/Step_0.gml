@@ -88,3 +88,7 @@ if (!inAction) {
 	x = clamp(x, -sprite_width/2, room_width - sprite_width/2);
 	y = clamp(y, sprite_height, room_height);
 }
+
+if (isMoving) {
+	audio_play_sound(snd_footstep,1,0);
+}
