@@ -2,11 +2,13 @@ if (obj_gameManager.gameIsPaused) {
 	image_index = sprite_direction * sprites_per_direction;
 }
 else {
-if (!inAction && !isMoving && currentTool != 0 && keyboard_check_pressed(ord("F"))) {
+if (!inAction && !isMoving && keyboard_check_pressed(ord("F"))) {
+	interacted = true;
+	if (currentTool != 0) {
 	image_index += sprites_per_action * currentTool;
 	currentIndex = image_index;
 	inAction = true;
-	interacted = true;
+	}
 }
 
 if (inAction && image_index < currentIndex || image_index >= currentIndex + sprites_per_action - 1) {
