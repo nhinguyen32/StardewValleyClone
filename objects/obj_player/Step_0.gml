@@ -1,3 +1,7 @@
+if (obj_gameManager.gameIsPaused) {
+	image_index = sprite_direction * sprites_per_direction;
+}
+else {
 if (!inAction && !isMoving && currentTool != 0 && keyboard_check_pressed(ord("F"))) {
 	image_index += sprites_per_action * currentTool;
 	currentIndex = image_index;
@@ -87,4 +91,5 @@ if (!inAction) {
 	
 	x = clamp(x, -sprite_width/2, room_width - sprite_width/2);
 	y = clamp(y, sprite_height, room_height);
+}
 }
