@@ -22,7 +22,8 @@ var collided_object_id = instance_place(x, y, obj_ground);
 			audio_play_sound(snd_itemPutDown, 1, 0);
 		}
 		// planting
-		else if (obj_player.currentTool == 2 && collided_object_id.index >= 9 && !collided_object_id.hasCrop) {
+		else if (obj_player.currentTool == 2 && collided_object_id.index >= 9 && !collided_object_id.hasCrop
+				&& obj_gameManager.gold >= 0) {
 			object_set_sprite(obj_crop, spr_parsnip);
 			var crop_id = instance_create_layer(collided_object_id.x, collided_object_id.y, "Instances", obj_crop);
 			obj_gameManager.gold -= crop_id.seed_price;
