@@ -14,6 +14,7 @@ function NextDay(){
 			i--;
 		}
 	}
+	
 	for (var i = 0; i < instance_number(obj_ground); ++i;)
 	{
 	    ground[i] = instance_find(obj_ground,i);
@@ -21,5 +22,8 @@ function NextDay(){
 			ground[i].index = 9;
 		}
 	}
+	
+	obj_shade.night_time = true;
+	
 	show_debug_message(obj_gameManager.day);
 }
