@@ -1,3 +1,7 @@
+if (obj_gameManager.gameIsPaused) {
+	image_index = sprite_direction * sprites_per_direction;
+}
+else {
 if (!inAction && !isMoving && currentTool != 0 && keyboard_check_pressed(ord("F"))) {
 	image_index += sprites_per_action * currentTool;
 	currentIndex = image_index;
@@ -89,6 +93,10 @@ if (!inAction) {
 	y = clamp(y, sprite_height, room_height);
 }
 
-if (isMoving) {
-	audio_play_sound(snd_footstep,1,0);
+	if (isMoving) {
+		if (!audio_is_playing(snd_footstep)) {
+			audio_sound_pitch(snd_footstep,4);
+			audio_play_sound(snd_footstep,1,0);
+		}
+	}
 }
