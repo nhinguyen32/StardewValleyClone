@@ -5,8 +5,4 @@ if (!gameIsPaused) {
 	paused_surf = -1;
 	instance_destroy(obj_menu);
 }
-if (gameIsPaused) {
-	alarm[0]++;
-    alarm[1]++;
-}
 show_debug_message(gameIsPaused?"game is paused":"game is playing");
