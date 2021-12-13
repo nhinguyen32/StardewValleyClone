@@ -1,7 +1,7 @@
 {
   "spriteId": {
-    "name": "spr_pausecontrol",
-    "path": "sprites/spr_pausecontrol/spr_pausecontrol.yy",
+    "name": "spr_pauseMenu",
+    "path": "sprites/spr_pauseMenu/spr_pauseMenu.yy",
   },
   "solid": false,
   "visible": true,
@@ -20,15 +20,18 @@
   "physicsStartAwake": true,
   "physicsKinematic": false,
   "physicsShapePoints": [],
-  "eventList": [],
+  "eventList": [
+    {"isDnD":false,"eventNum":0,"eventType":3,"collisionObjectId":null,"resourceVersion":"1.0","name":"","tags":[],"resourceType":"GMEvent",},
+    {"isDnD":false,"eventNum":0,"eventType":0,"collisionObjectId":null,"resourceVersion":"1.0","name":"","tags":[],"resourceType":"GMEvent",},
+  ],
   "properties": [],
   "overriddenProperties": [],
   "parent": {
-    "name": "MainMenu",
-    "path": "folders/Objects/MainMenu.yy",
+    "name": "PauseMenu",
+    "path": "folders/Objects/PauseMenu.yy",
   },
   "resourceVersion": "1.0",
-  "name": "obj_resume",
+  "name": "obj_pauseMenu",
   "tags": [],
   "resourceType": "GMObject",
 }
