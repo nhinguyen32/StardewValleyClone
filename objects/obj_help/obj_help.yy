@@ -1,7 +1,7 @@
 {
   "spriteId": {
-    "name": "spr_sound",
-    "path": "sprites/spr_sound/spr_sound.yy",
+    "name": "spr_help",
+    "path": "sprites/spr_help/spr_help.yy",
   },
   "solid": false,
   "visible": true,
@@ -23,7 +23,6 @@
   "eventList": [
     {"isDnD":false,"eventNum":0,"eventType":0,"collisionObjectId":null,"resourceVersion":"1.0","name":"","tags":[],"resourceType":"GMEvent",},
     {"isDnD":false,"eventNum":7,"eventType":6,"collisionObjectId":null,"resourceVersion":"1.0","name":"","tags":[],"resourceType":"GMEvent",},
-    {"isDnD":false,"eventNum":0,"eventType":3,"collisionObjectId":null,"resourceVersion":"1.0","name":"","tags":[],"resourceType":"GMEvent",},
   ],
   "properties": [],
   "overriddenProperties": [],
@@ -32,7 +31,7 @@
     "path": "folders/Objects/MainMenu.yy",
   },
   "resourceVersion": "1.0",
-  "name": "obj_sound",
+  "name": "obj_help",
   "tags": [],
   "resourceType": "GMObject",
 }
