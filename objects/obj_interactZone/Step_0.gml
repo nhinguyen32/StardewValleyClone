@@ -11,6 +11,7 @@ var collided_object_id = instance_place(x, y, obj_ground);
 				instance_destroy(crop_id);
 				collided_object_id.hasCrop = false;
 			}
+			audio_play_sound(snd_itemPutDown, 1, 0);
 		}
 		// planting
 		else if (obj_player.currentTool == 2 && collided_object_id.index >= 9 && !collided_object_id.hasCrop) {
@@ -20,19 +21,23 @@ var collided_object_id = instance_place(x, y, obj_ground);
 			collided_object_id.hasCrop = true;
 		}
 		// watering
-		else if (obj_player.currentTool == 3 && collided_object_id.index == 9) {
-			collided_object_id.index = 10;
+		else if (obj_player.currentTool == 3) {
+			audio_play_sound(snd_water, 1, 0);
+			alarm_set(0, 40);
+			if (collided_object_id.index == 9) {
+				collided_object_id.index = 10;
+			}
 		}
 		// harvesting
 		else if (obj_player.currentTool == 0) {
 			var crop_id = instance_place(x, y, obj_crop);
-			show_debug_message("a");
 			if (crop_id != noone) {
 				if (crop_id.image_index == crop_id.image_number - 1) {
+					audio_play_sound(snd_itemPickup, 1, 0);
 					obj_gameManager.gold += crop_id.crop_price;
 					instance_destroy(crop_id);
 					collided_object_id.hasCrop = false;
-					show_debug_message("c");
+					
 				}
 			}
 		}
