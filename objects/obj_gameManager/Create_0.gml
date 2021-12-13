@@ -1,8 +1,8 @@
 day = 1;
 gold = 100;
 gameIsPaused = false;
-//saveCounter = 0;
-//currentSave = -1;
+saveCounter = 0;
+currentSave = -1;
 
 var ground_width = obj_ground.sprite_width;
 var ground_height = obj_ground.sprite_height;
