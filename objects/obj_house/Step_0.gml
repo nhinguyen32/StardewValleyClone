@@ -1,1 +1,1 @@
-image_index = index;
+image_index = houseIndex;

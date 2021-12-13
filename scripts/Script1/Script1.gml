@@ -24,6 +24,7 @@ function NextDay(){
 	}
 	
 	obj_shade.night_time = true;
+	obj_player.doorInteracted = false;
 	
 	show_debug_message(obj_gameManager.day);
 }
