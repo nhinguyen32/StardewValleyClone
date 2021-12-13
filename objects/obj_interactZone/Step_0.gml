@@ -1,18 +1,23 @@
+var house_id = instance_place(x, y, obj_house);
+if (house_id = noone) {
+	obj_player.canInteract = true;
+}
+else {
+	obj_player.canInteract = false;
+}
+
 if (obj_player.interacted) {
 var collided_object_id = instance_place(x, y, obj_ground);
 	if (collided_object_id != noone) {
 		// hoeing
 		if (obj_player.currentTool == 1) {
-			var house_id = instance_place(x, y, obj_house);
-			if (house_id = noone) {
-				if (collided_object_id.index < 9) {
-					collided_object_id.index = 9;
-				}
-				else if (collided_object_id.hasCrop) {
-					var crop_id = instance_place(x, y, obj_crop);
-					instance_destroy(crop_id);
-					collided_object_id.hasCrop = false;
-				}
+			if (collided_object_id.index < 9) {
+				collided_object_id.index = 9;
+			}
+			else if (collided_object_id.hasCrop) {
+				var crop_id = instance_place(x, y, obj_crop);
+				instance_destroy(crop_id);
+				collided_object_id.hasCrop = false;
 			}
 			audio_play_sound(snd_itemPutDown, 1, 0);
 		}
