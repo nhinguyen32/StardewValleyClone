@@ -6,3 +6,6 @@ if (global.isSoundOn) {
 else {
 	audio_pause_all();
 }
+//if (gameIsPaused) {
+//	room_goto(Menu);
+//}
