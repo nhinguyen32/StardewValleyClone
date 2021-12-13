@@ -1,6 +1,6 @@
 /// @description Insert description here
 // You can write your code in this editor
-if gameIsPaused == true
+if (gameIsPaused == true)
 {
 if !surface_exists(paused_surf)
     {
