@@ -8,3 +8,4 @@ currentIndex = 0;
 sprite_direction = 0; // 0 = down, 1 = right, 2 = up
 isMoving = false;
 interacted = false;
+canInteract = true;
