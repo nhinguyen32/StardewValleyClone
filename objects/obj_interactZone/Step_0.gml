@@ -1,11 +1,11 @@
-if (!obj_player.isMoving && obj_player.inAction && keyboard_check_pressed(ord("F"))) {
+if (obj_player.interacted) {
 var collided_object_id = instance_place(x, y, obj_ground);
 	if (collided_object_id != noone) {
 		if (obj_player.currentTool == 1) {
 			if (collided_object_id.index < 9) {
 				collided_object_id.index = 9;
 			}
-			if (collided_object_id.hasCrop) {
+			else if (collided_object_id.hasCrop) {
 				var crop_id = instance_place(x, y, obj_crop);
 				instance_destroy(crop_id);
 				collided_object_id.hasCrop = false;
@@ -20,4 +20,5 @@ var collided_object_id = instance_place(x, y, obj_ground);
 			collided_object_id.index = 10;
 		}
 	}
+	obj_player.interacted = false;
 }
